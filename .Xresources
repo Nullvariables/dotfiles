@@ -1,0 +1,99 @@
+!############################################
+!#             -- .XRESOURCES --            #
+!############################################
+! -- Basic -- !
+Xft.dpi: 96
+Xft.antialias: true
+Xft.hinting: true
+Xft.rgba: rgb
+Xft.autohint: true
+Xft.hintstyle: hintfull
+Xft.lcdfilter: lcdfilter
+
+!########################################### 
+!            -- URXVT CONFIG --            #
+!###########################################
+! -- Basic -- !
+URxvt.imLocale: en_US.UTF-8
+URxvt.termName: rxvt-unicode-256color
+URxvt.buffered: false
+URxvt.intensityStyles: false
+URxvt.urgentOnBell: true
+URxvt.depth: 24
+URxvt.iso14755: false
+
+! -- font -- !
+URxvt.font: xft:Iosevka:size=9:hinting=true
+URxvt.italicFont: xft:Iosevka Term:size=9:style=Italic:hinting=true
+URxvt.boldFont: xft:Iosevka Term:size=9:style=Bold:hinting=true
+URxvt.boldItalicFont: xft:Iosevka Term:size=9:style=Bold Italic:hinting=true
+
+! -- appearance -- !
+URxvt.letterSpace: -3
+URxvt.lineSpace: 1
+URxvt.saveLines: 2048
+URxvt.scrollBar: false
+URxvt.cursorColor: white
+URxvt.cursorBlink: true
+URxvt.geometry: 92x24
+URxvt.internalBorder: 2
+
+
+! -- extentions --!
+!# Define extentions,
+URxvt.perl-ext-common: default,matcher,clipboard,
+
+!# Clipboard Copy/Paste,
+URxvt.clipboard.autocopy: true
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
+
+!# Url launcher,
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
+
+
+! -- Color Scheme -- !
+! special
+*.foreground:   #c3dcdc
+*.background:   #060808
+*.cursorColor:  #c3dcdc
+
+! black
+*.color0:       #0c0f0f
+*.color8:       #6ec7c6
+
+! red
+*.color1:       #151a1a
+*.color9:       #bdaa6d
+
+! green
+*.color2:       #252b2b
+*.color10:      #f480ed
+
+! yellow
+*.color3:       #3b4444
+*.color11:      #81d4d3
+
+! blue
+*.color4:       #576363
+*.color12:      #69bbba
+
+! magenta
+*.color5:       #798989
+*.color13:      #65a09f
+
+! cyan
+*.color6:       #a0b5b5
+*.color14:      #bca85a
+
+! white
+*.color7:       #cee8e7
+*.color15:      #d2bd76
+
+
+
+!##########################!
+!    Reload .Xresources    !
+!    xrdb ~/.Xresources    !
+!##########################!
